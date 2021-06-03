@@ -1,1 +1,207 @@
-/* Add CSS styling here */
+/*-- Tom Bielawski
+  -- Lambda School Web45
+  -- Unit 1, Module 4 Assignment: Wireframes 
+  -- index.css
+  -- 06/03/2021 --*/
+
+/* Reset code
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Starting my styling */
+/*General Styles*/
+html
+{
+    font-size:62.5%;
+    
+}
+
+body
+{
+    font-size:1.8rem;
+    line-height:1.5;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3
+{
+    font-family: 'font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1
+{
+    font-size:5rem;
+}
+
+h2
+{
+    font-size:3.5rem;
+}
+
+section
+{
+    padding:4% 0;
+}
+
+a
+{
+    text-decoration:none;
+    color: #000000;
+}
+
+/* Header */
+h1
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav Styling */
+nav
+{
+    display: flex;
+    justify-content: center;
+}
+
+.navBar
+{
+    width: 100%;  
+    margin: 0;
+}
+
+
+.navButton
+{
+    width: 15%;
+    background: green;
+    border: .2rem solid;
+    padding: .4rem .8rem;
+    text-align: center;
+}
+
+/* Intro */
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the intro text */
+.lorem
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+/* Main Pic */
+.pic img
+{
+    height: 300px;
+    width: 100%;
+    margin: 2%
+}
+
+/* Gallery */
+
+.gallery /* Style the gallery container */
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-left: 10px ;
+    margin-right: 10px ;
+}
+
+.box /* Margins between boxes */
+{
+    margin-left: 10px ;
+    margin-right: 10px ;
+}
+
+.fourBoxes /* Picture box styling */
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.textRight /* Text area styling */
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    flex-wrap: nowrap;
+}
+
+/* Footer area */
+footer
+{ 
+    text-align: center;
+    background-color: burlywood;
+    height: 10vh;
+}
+
+footer div
+{
+    padding-top: 3%;
+}
+
+
