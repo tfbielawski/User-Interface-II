@@ -353,6 +353,13 @@ footer div
         display: flex;
         text-align: center;
     }
+
+    footer
+    { 
+        text-align: center;
+        background-color: burlywood;
+        height: 50%;
+    }
 }
 
 
