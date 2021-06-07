@@ -1,8 +1,9 @@
 /*-- Tom Bielawski
   -- Lambda School Web45
-  -- Unit 1, Module 4 Assignment: Wireframes 
+  -- Unit 1, Week 1, Module 4 Assignment: Wireframes 
   -- index.css
-  -- 06/03/2021 --*/
+  -- 06/03/2021
+  -- 06/07/2021: Unit 1, Week 2, Module 1, update to add mobile responsive --*/
 
 /* Reset code
    http://meyerweb.com/eric/tools/css/reset/ 
@@ -62,11 +63,7 @@ table
 
 /* Starting my styling */
 /*General Styles*/
-html
-{
-    font-size:62.5%;
-    
-}
+html { font-size:62.5%; }
 
 body
 {
@@ -80,20 +77,11 @@ h1, h2, h3
     font-family: 'font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-h1
-{
-    font-size:5rem;
-}
+h1 { font-size:5rem; }
 
-h2
-{
-    font-size:3.5rem;
-}
+h2 { font-size:3.5rem;}
 
-section
-{
-    padding:4% 0;
-}
+section { padding:4% 0; }
 
 a
 {
@@ -199,9 +187,6 @@ footer
     height: 10vh;
 }
 
-footer div
-{
-    padding-top: 3%;
-}
+footer div { padding-top: 3%; }
 
 
