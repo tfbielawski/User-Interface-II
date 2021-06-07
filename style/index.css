@@ -108,7 +108,7 @@ h1
     justify-content: center;
 }
 
-/* Nav Styling */
+/* Nav Area Styling */
 nav
 {
     display: flex;
@@ -156,6 +156,7 @@ nav
 .pic img
 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 35vh; 
@@ -163,24 +164,38 @@ nav
     padding-left: 5%;
 }
 
-/* Gallery */
-
-.gallery /* Style the gallery container */
+.gallery h2
 {
     display: flex;
+    padding-bottom: 2%;
+    align-items: center;
     justify-content: space-evenly;
-    padding-left: 3.5%;
+    text-align: center;
 }
 
-.fourBoxes /* Picture box styling */
+/* Picture box styling */
+.fourBoxes 
 {
+    padding-top: 1%;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100%; 
     flex-wrap: nowrap;
+    
 }
 
-.textRight /* Text area styling */
+/* Image box styling */
+.box
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+    height: 100%;
+    flex-wrap: nowrap; 
+}
+
+/* Text area styling */
+.textRight 
 {
     display: flex;
     width: 55%;
@@ -203,14 +218,11 @@ footer div
 
 
 
-/* Media queries */
+/*** Media queries ***/
 /* Mobile Phones */
 @media(max-width: 500px)
 {
-    /* Align the nav bar vertically for smaller screens */
-    
-    /* Adapt the headings to align vertically */
-    
+    /* Adapt the headings */   
     h1, h2
     {
         text-align: center;
@@ -225,6 +237,7 @@ footer div
         align-items: center;
     }
 
+    /* Adapt the nav buttons */
     .navButton
     {
         width: 45%;
@@ -250,9 +263,7 @@ footer div
         padding: 0 2% 0 2%;
     }
 
-
     /* Make the four image boxes align centrally */
-   
     .fourBoxes
     {
         display: flex;
@@ -260,14 +271,12 @@ footer div
         align-items: center;
     }
 
-
     /* Make the text area fall under the four image boxes */
     .textRight
     {
         display: flex;
         flex-direction: column; 
         text-align: center;
-        
     }
 }
 
@@ -315,17 +324,28 @@ footer div
         padding: 0 2% 0 2%;
     }
 
-
+ 
     /* Make the four image boxes align horizontally */
-   
     .fourBoxes
     {
         display: flex;
-        justify-content: space-evenly;
+        align-items: center;
         flex-wrap: wrap;
-        padding-right: 5%;
     }
     
+    .box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2% 5% 2% 5%;
+        max-width: 90%;
+    }
+
+    .box image 
+    {
+        max-width: 20%;
+    }
 
     /* Make the text area fall under the four image boxes */
     .textRight
