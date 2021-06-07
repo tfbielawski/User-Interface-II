@@ -155,9 +155,12 @@ nav
 /* Main Pic */
 .pic img
 {
-    height: 300px;
-    width: 100%;
-    margin: 2%
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35vh; 
+    width: 90%;
+    padding-left: 5%;
 }
 
 /* Gallery */
@@ -166,16 +169,7 @@ nav
 {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    flex-wrap: nowrap;
-    margin-left: 10px ;
-    margin-right: 10px ;
-}
-
-.box /* Margins between boxes */
-{
-    margin-left: 10px ;
-    margin-right: 10px ;
+    padding-left: 3.5%;
 }
 
 .fourBoxes /* Picture box styling */
@@ -189,9 +183,9 @@ nav
 .textRight /* Text area styling */
 {
     display: flex;
-    justify-content: space-evenly;
     width: 55%;
-    flex-wrap: nowrap;
+    padding-right: 3.75%;
+    text-align:justify;
 }
 
 /* Footer area */
@@ -215,12 +209,12 @@ footer div
 {
     /* Align the nav bar vertically for smaller screens */
     
-    /* Adapt the headings to align centrally */
+    /* Adapt the headings to align vertically */
+    
     h1, h2
     {
-        display: flex;
-        justify-content: center;
         text-align: center;
+        font-size: 10%;
     }
 
     /* Adapt the nav bar to align centrally */
@@ -231,13 +225,20 @@ footer div
         align-items: center;
     }
 
+    .navButton
+    {
+        width: 45%;
+        background: green;
+        border: .2rem solid;
+        padding: .4rem .8rem;
+        text-align: center;
+    }
+    
     /* Main Picture */
     .pic img
     {
         display: flex;
         flex-direction: column;
-        
-        
     }
 
     /* Style the intro text to align centrally */
@@ -257,24 +258,81 @@ footer div
         display: flex;
         flex-direction: column; 
         align-items: center;
-        justify-content: center;
     }
 
 
-     /* Make the text area fall under the four image boxes */
+    /* Make the text area fall under the four image boxes */
     .textRight
     {
         display: flex;
         flex-direction: column; 
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        
     }
 }
 
-/* @media (max-width: 800px)
+/* Tablet */
+@media (max-width: 800px)
 {
+    /* Heading styles*/
+    h1, h2
+    {
+        text-align: center;
+        font-size: 140%;
+    }
 
-} */
+    /* Adapt the nav bar */
+    nav     
+    {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* Extend the nav buttons and stack them vertically*/ 
+    .navButton
+    {
+        width: 45%;
+        background: green;
+        border: .2rem solid;
+        padding: .4rem .8rem;
+        text-align: center;
+    }
+    
+    /* Main Picture */
+    .pic img
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Style the intro text */
+    .lorem
+    {
+        display: flex;
+        justify-content: center; 
+        text-align: center;
+        padding: 0 2% 0 2%;
+    }
+
+
+    /* Make the four image boxes align horizontally */
+   
+    .fourBoxes
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-right: 5%;
+    }
+    
+
+    /* Make the text area fall under the four image boxes */
+    .textRight
+    {
+        display: flex;
+        text-align: center;
+    }
+}
 
 
