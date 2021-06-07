@@ -63,7 +63,10 @@ table
 
 /* Starting my styling */
 /*General Styles*/
-html { font-size:62.5%; }
+html 
+{ 
+    font-size:62.5%; 
+}
 
 body
 {
@@ -77,16 +80,25 @@ h1, h2, h3
     font-family: 'font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 { font-size:5rem; }
+h1 
+{ 
+    font-size:5rem; 
+}
 
-h2 { font-size:3.5rem;}
+h2 
+{ 
+    font-size:3.5rem;
+}
 
-section { padding:4% 0; }
+section 
+{ 
+    padding:4% 0; 
+}
 
 a
 {
     text-decoration:none;
-    color: #000000;
+    color:  white;
 }
 
 /* Header */
@@ -101,12 +113,14 @@ nav
 {
     display: flex;
     justify-content: center;
+
 }
 
 .navBar
 {
     width: 100%;  
     margin: 0;
+    
 }
 
 
@@ -117,6 +131,7 @@ nav
     border: .2rem solid;
     padding: .4rem .8rem;
     text-align: center;
+    
 }
 
 /* Intro */
@@ -187,6 +202,79 @@ footer
     height: 10vh;
 }
 
-footer div { padding-top: 3%; }
+footer div 
+{ 
+    padding-top: 3%; 
+}
+
+
+
+/* Media queries */
+/* Mobile Phones */
+@media(max-width: 500px)
+{
+    /* Align the nav bar vertically for smaller screens */
+    
+    /* Adapt the headings to align centrally */
+    h1, h2
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Adapt the nav bar to align centrally */
+    nav     
+    {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* Main Picture */
+    .pic img
+    {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    /* Style the intro text to align centrally */
+    .lorem
+    {
+        display: flex;
+        justify-content: center; 
+        text-align: center;
+        padding: 0 2% 0 2%;
+    }
+
+
+    /* Make the four image boxes align centrally */
+   
+    .fourBoxes
+    {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+     /* Make the text area fall under the four image boxes */
+    .textRight
+    {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* @media (max-width: 800px)
+{
+
+} */
 
 
